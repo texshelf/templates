@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  latex:
+    runs-on: ubuntu-latest
+    container: texlive/texlive:latest
+    strategy:
+      fail-fast: false
+      matrix:
+        template: [article, slides, letter]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile
+        working-directory: ${{ matrix.template }}
+        run: latexmk -pdf -interaction=nonstopmode -halt-on-error -no-shell-escape main.tex
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.template }}
+          path: ${{ matrix.template }}/main.pdf
+
+  typst:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        template: [typ-article, typ-notes]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v4
+      - name: Compile
+        working-directory: ${{ matrix.template }}
+        run: typst compile main.typ
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.template }}
+          path: ${{ matrix.template }}/main.pdf

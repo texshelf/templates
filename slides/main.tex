@@ -1,0 +1,69 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{booktabs}
+
+\usetheme{default}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{itemize items}[circle]
+\definecolor{accent}{RGB}{24,84,66}
+\setbeamercolor{structure}{fg=accent}
+\setbeamercolor{frametitle}{fg=accent}
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamerfont{title}{series=\bfseries,size=\LARGE}
+
+\title{An Example Talk}
+\author{A. U. Thor}
+\institute{Your Institution}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Motivation}
+
+\begin{frame}{Why this matters}
+  \begin{itemize}
+    \item One idea per slide.
+    \item Keep each line short enough to read from the back row.
+    \item Put the detail in your notes.
+  \end{itemize}
+\end{frame}
+
+\section{Results}
+
+\begin{frame}{A result}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      The energy of a photon is
+      \[ E = h\nu \]
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{tabular}{lr}
+        \toprule
+        Line & $\lambda$ (nm) \\
+        \midrule
+        H$\alpha$ & 656.3 \\
+        H$\beta$ & 486.1 \\
+        \bottomrule
+      \end{tabular}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Summary}
+  Say the one thing the audience should remember.
+\end{frame}
+
+\end{document}
