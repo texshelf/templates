@@ -1,0 +1,33 @@
+\documentclass[11pt,a4paper,openright]{book}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[inner=3cm,outer=2.5cm,top=2.5cm,bottom=3cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,allcolors=black]{hyperref}
+
+\title{An Example Book}
+\author{A. U. Thor}
+\date{\today}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\chapter{Preface}
+Say who the book is for and what a reader needs to know before starting.
+
+\mainmatter
+\include{chapters/first}
+\include{chapters/second}
+
+\backmatter
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

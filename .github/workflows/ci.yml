@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        template: [article, slides, letter]
+        template: [article, slides, letter, book]
     steps:
       - uses: actions/checkout@v4
       - name: Compile
@@ -28,7 +28,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        template: [typ-article, typ-notes]
+        template: [article-typst, notes-typst]
     steps:
       - uses: actions/checkout@v4
       - uses: typst-community/setup-typst@v4

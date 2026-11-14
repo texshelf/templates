@@ -8,14 +8,15 @@ complete project that compiles as it is.
 | `article` | LaTeX (pdflatex, bibtex) | Short article with sections, a table and a bibliography |
 | `slides` | LaTeX (pdflatex) | 16:9 beamer talk with no extra theme packages |
 | `letter` | LaTeX (pdflatex) | One-page letter |
-| `typ-article` | Typst | The article above, in Typst |
-| `typ-notes` | Typst | Lecture notes with definition and example blocks |
+| `book` | LaTeX (pdflatex, bibtex) | Book with front matter, two chapters and a bibliography |
+| `article-typst` | Typst | The article above, in Typst |
+| `notes-typst` | Typst | Lecture notes with definition and example blocks |
 
 Start a project from one of them with the CLI:
 
 ```console
 texshelf init article my-paper
-typshelf init typ-notes calculus
+typshelf init notes-typst calculus
 ```
 
 ## Changing a template
