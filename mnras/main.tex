@@ -1,0 +1,78 @@
+% Monthly Notices of the Royal Astronomical Society.
+\documentclass[fleqn,usenatbib]{mnras}
+
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\title[An Example Title]{An Example Title}
+\author[A. U. Thor et al.]{
+A. U. Thor,$^{1}$\thanks{E-mail: author@example.org}
+and Second Author$^{2}$
+\\
+$^{1}$Institute of Astrophysics, Your University, City, Country\\
+$^{2}$Another Institute, City, Country
+}
+\date{Accepted XXX. Received YYY; in original form ZZZ}
+\pubyear{2026}
+
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+\begin{abstract}
+State the question, the data and method, and the main result. MNRAS limits
+the abstract to 250 words and asks for a single paragraph.
+\end{abstract}
+
+\begin{keywords}
+galaxies: distances and redshifts -- stars: variables: general
+\end{keywords}
+
+\section{Introduction}
+
+Say what is known, what is missing, and what this paper adds. Cite with
+\citet{einstein1905} in the text or in parentheses \citep{knuth1984}.
+
+\section{Methods}
+
+Describe the observations and the analysis in enough detail to repeat them.
+
+\begin{equation}
+  \mu = 5 \log_{10}\left(\frac{d}{10\,\mathrm{pc}}\right)
+  \label{eq:distance}
+\end{equation}
+
+\begin{table}
+  \centering
+  \caption{Example measurements.}
+  \label{tab:results}
+  \begin{tabular}{lcc}
+    \hline
+    Object & $\mu$ (mag) & $\sigma_\mu$ (mag) \\
+    \hline
+    A & 18.48 & 0.03 \\
+    B & 18.52 & 0.04 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\section{Conclusions}
+
+Give the result and what follows from it.
+
+\section*{Acknowledgements}
+
+Thank the people and grants that made the work possible.
+
+\section*{Data Availability}
+
+Say where the data can be found. MNRAS requires this section.
+
+\bibliographystyle{mnras}
+\bibliography{references}
+
+\bsp
+\label{lastpage}
+\end{document}

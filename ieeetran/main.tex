@@ -1,0 +1,73 @@
+% IEEE conference paper. Use [journal] for Transactions and other journals.
+\documentclass[conference]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{An Example Title}
+
+\author{\IEEEauthorblockN{A. U. Thor}
+\IEEEauthorblockA{Department, Your University\\
+City, Country\\
+author@example.org}
+\and
+\IEEEauthorblockN{Second Author}
+\IEEEauthorblockA{Another Institute\\
+City, Country\\
+second@example.org}}
+
+\maketitle
+
+\begin{abstract}
+State the problem, the approach and the main result in one paragraph, with no
+citations or symbols that need a definition.
+\end{abstract}
+
+\begin{IEEEkeywords}
+first keyword, second keyword, third keyword
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Say what is known, what is missing, and what this paper adds. Cite earlier
+work by number \cite{einstein1905}, \cite{knuth1984}.
+
+\section{Method}
+
+Describe what you did in enough detail to repeat it.
+
+\begin{equation}
+  \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+  \label{eq:mean}
+\end{equation}
+
+\begin{table}[htbp]
+  \caption{Example Measurements}
+  \label{tab:results}
+  \centering
+  \begin{tabular}{|l|c|c|}
+    \hline
+    Sample & Mean & Std.\ dev. \\
+    \hline
+    A & 1.02 & 0.11 \\
+    B & 0.97 & 0.08 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\section{Results}
+
+Report what you found. Table~\ref{tab:results} lists the measurements and
+\eqref{eq:mean} defines the mean.
+
+\section*{Acknowledgment}
+
+Thank the people and grants that made the work possible.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

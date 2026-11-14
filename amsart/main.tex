@@ -1,0 +1,60 @@
+% American Mathematical Society article.
+\documentclass[11pt]{amsart}
+
+\usepackage{amssymb}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\begin{document}
+
+\title{An Example Title}
+
+\author{A. U. Thor}
+\address{Department of Mathematics, Your University, City, Country}
+\email{author@example.org}
+
+\subjclass[2020]{Primary 00A00; Secondary 00B00}
+\keywords{First keyword, second keyword}
+
+\begin{abstract}
+State the main result and the idea of its proof in a few sentences, with no
+citations.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Say what is known, what is missing, and what this paper proves. Cite earlier
+work by key \cite{einstein1905,knuth1984}.
+
+\section{Main result}
+
+\begin{definition}
+A sequence $(a_n)$ of real numbers is \emph{bounded} if there is an $M$ with
+$|a_n| \le M$ for all $n$.
+\end{definition}
+
+\begin{theorem}\label{thm:main}
+Every bounded monotone sequence of real numbers converges.
+\end{theorem}
+
+\begin{proof}
+Let $(a_n)$ be increasing and bounded, and let $L = \sup_n a_n$. Given
+$\varepsilon > 0$, some $a_N$ exceeds $L - \varepsilon$, and then
+$L - \varepsilon < a_n \le L$ for every $n \ge N$.
+\end{proof}
+
+\begin{remark}
+Theorem~\ref{thm:main} fails over the rational numbers.
+\end{remark}
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,79 @@
+% Elsevier journals. Options: preprint (default), review, 1p, 3p, 5p; add
+% `authoryear` for author-year citations.
+\documentclass[preprint,12pt]{elsarticle}
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\journal{Journal Name}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{An Example Title}
+
+\author[first]{A. U. Thor\corref{cor}}
+\ead{author@example.org}
+\author[second]{Second Author}
+
+\cortext[cor]{Corresponding author}
+\affiliation[first]{organization={Department, Your University},
+                    city={City},
+                    country={Country}}
+\affiliation[second]{organization={Another Institute},
+                     city={City},
+                     country={Country}}
+
+\begin{abstract}
+State the question, the method and the main result in one paragraph.
+\end{abstract}
+
+\begin{keyword}
+first keyword \sep second keyword \sep third keyword
+\end{keyword}
+
+\end{frontmatter}
+
+\section{Introduction}
+
+Say what is known, what is missing, and what this paper adds. Cite earlier
+work by key \cite{einstein1905,knuth1984}.
+
+\section{Methods}
+
+Describe what you did in enough detail to repeat it.
+
+\begin{equation}
+  \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+  \label{eq:mean}
+\end{equation}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{lrr}
+    \toprule
+    Sample & Mean & Std.\ dev. \\
+    \midrule
+    A & 1.02 & 0.11 \\
+    B & 0.97 & 0.08 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Example measurements.}
+  \label{tab:results}
+\end{table}
+
+\section{Results}
+
+Report what you found. Table~\ref{tab:results} lists the measurements and
+Eq.~\eqref{eq:mean} defines the mean.
+
+\section*{Acknowledgements}
+
+Thank the people and grants that made the work possible.
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+
+\end{document}

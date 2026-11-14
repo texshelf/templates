@@ -1,0 +1,67 @@
+% AAS journals (ApJ, ApJL, ApJS, AJ, PSJ) manuscript, AASTeX v7.
+% Class options: twocolumn, linenumbers, anonymous, and others in the AASTeX guide.
+\documentclass[twocolumn]{aastex701}
+
+\shorttitle{An Example Title}
+\shortauthors{Thor et al.}
+
+\begin{document}
+
+\title{An Example Title}
+
+\author[0000-0000-0000-0000]{A. U. Thor}
+\affiliation{Institute of Astrophysics, Your University, City, Country}
+\email{author@example.org}
+
+\author{Second Author}
+\affiliation{Another Institute, City, Country}
+\email{second@example.org}
+
+\begin{abstract}
+State the question, the data and method, and the main result with its
+uncertainty. AAS journals limit the abstract to 250 words.
+\end{abstract}
+
+\keywords{\uat{Galaxies}{573} --- \uat{Stellar distance}{1595}}
+
+\section{Introduction} \label{sec:intro}
+
+Say what is known, what is missing, and what this paper adds. Cite with
+\citet{einstein1905} in the text or in parentheses \citep{knuth1984}.
+
+\section{Data and Methods} \label{sec:methods}
+
+Describe the observations and the analysis in enough detail to repeat them.
+Equation~\ref{eq:distance} is numbered automatically.
+
+\begin{equation}
+  \mu = 5 \log_{10}\left(\frac{d}{10\,\mathrm{pc}}\right)
+  \label{eq:distance}
+\end{equation}
+
+\begin{deluxetable}{lcc}
+\tablecaption{Example measurements \label{tab:results}}
+\tablehead{\colhead{Object} & \colhead{$\mu$} & \colhead{$\sigma_\mu$} \\
+\colhead{} & \colhead{(mag)} & \colhead{(mag)}}
+\startdata
+A & 18.48 & 0.03 \\
+B & 18.52 & 0.04 \\
+\enddata
+\end{deluxetable}
+
+\section{Results} \label{sec:results}
+
+Report what you found. Table~\ref{tab:results} lists the measurements.
+
+\begin{acknowledgments}
+Thank the people and grants that made the work possible.
+\end{acknowledgments}
+
+\facilities{Name the telescopes and instruments used}
+
+\software{astropy \citep{knuth1984}}
+
+\bibliography{references}{}
+\bibliographystyle{aasjournalv7}
+
+\end{document}

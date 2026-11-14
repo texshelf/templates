@@ -1,0 +1,64 @@
+% APS and AIP journals with REVTeX 4.2. Change `prl` to prd, prb, pra, pre,
+% prx, rmp or another journal, and `aps` to `aip` for AIP journals.
+\documentclass[aps,prl,reprint,amsmath,amssymb]{revtex4-2}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{An Example Title}
+
+\author{A. U. Thor}
+\email{author@example.org}
+\affiliation{Department of Physics, Your University, City, Country}
+
+\author{Second Author}
+\affiliation{Another Institute, City, Country}
+
+\date{\today}
+
+\begin{abstract}
+State the question, the method and the main result. Physical Review Letters
+limits the abstract to 600 characters.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Say what is known, what is missing, and what this paper adds. Cite earlier
+work by key \cite{einstein1905,knuth1984}.
+
+\section{Method}
+
+Describe the setup and the analysis in enough detail to repeat them.
+
+\begin{equation}
+  E^2 = (pc)^2 + (mc^2)^2
+  \label{eq:energy}
+\end{equation}
+
+\begin{table}[b]
+  \caption{\label{tab:results}Example measurements.}
+  \begin{ruledtabular}
+    \begin{tabular}{lcc}
+      Sample & Value & Uncertainty \\
+      \hline
+      A & 1.02 & 0.11 \\
+      B & 0.97 & 0.08 \\
+    \end{tabular}
+  \end{ruledtabular}
+\end{table}
+
+\section{Results}
+
+Report what you found. Table~\ref{tab:results} lists the measurements and
+Eq.~(\ref{eq:energy}) is referenced like this.
+
+\begin{acknowledgments}
+Thank the people and grants that made the work possible.
+\end{acknowledgments}
+
+\bibliography{references}
+
+\end{document}

@@ -9,6 +9,14 @@ complete project that compiles as it is.
 | `slides` | LaTeX (pdflatex) | 16:9 beamer talk with no extra theme packages |
 | `letter` | LaTeX (pdflatex) | One-page letter |
 | `book` | LaTeX (pdflatex, bibtex) | Book with front matter, two chapters and a bibliography |
+| `aastex` | LaTeX (pdflatex, bibtex) | AAS journals manuscript (ApJ, AJ and others) with AASTeX v7 |
+| `mnras` | LaTeX (pdflatex, bibtex) | MNRAS paper |
+| `revtex` | LaTeX (pdflatex, bibtex) | APS and AIP paper with REVTeX 4.2 |
+| `elsarticle` | LaTeX (pdflatex, bibtex) | Elsevier journal manuscript |
+| `ieeetran` | LaTeX (pdflatex, bibtex) | IEEE conference or journal paper |
+| `acmart` | LaTeX (pdflatex, bibtex) | ACM conference paper |
+| `llncs` | LaTeX (pdflatex, bibtex) | Springer LNCS proceedings paper |
+| `amsart` | LaTeX (pdflatex, bibtex) | AMS mathematics article |
 | `article-typst` | Typst | The article above, in Typst |
 | `notes-typst` | Typst | Lecture notes with definition and example blocks |
 

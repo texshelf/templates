@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        template: [article, slides, letter, book]
+        template: [article, slides, letter, book, aastex, mnras, revtex, elsarticle, ieeetran, acmart, llncs, amsart]
     steps:
       - uses: actions/checkout@v4
       - name: Compile

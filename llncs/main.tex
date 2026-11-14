@@ -1,0 +1,69 @@
+% Springer Lecture Notes in Computer Science (LNCS) proceedings.
+\documentclass[runningheads]{llncs}
+
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{An Example Title}
+\titlerunning{An Example Title}
+
+\author{A. U. Thor\inst{1}\orcidID{0000-0000-0000-0000} \and
+Second Author\inst{2}}
+\authorrunning{A. U. Thor and S. Author}
+
+\institute{Your University, City, Country\\
+\email{author@example.org} \and
+Another Institute, City, Country}
+
+\maketitle
+
+\begin{abstract}
+State the problem, the approach and the main result in 150 to 250 words.
+
+\keywords{First keyword \and Second keyword \and Third keyword.}
+\end{abstract}
+
+\section{Introduction}
+
+Say what is known, what is missing, and what this paper adds. Cite earlier
+work by number \cite{einstein1905,knuth1984}.
+
+\section{Method}
+
+Describe what you did in enough detail to repeat it.
+
+\begin{equation}
+  \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+  \label{eq:mean}
+\end{equation}
+
+\begin{table}
+  \caption{Example measurements.}
+  \label{tab:results}
+  \centering
+  \begin{tabular}{|l|c|c|}
+    \hline
+    Sample & Mean & Std.\ dev. \\
+    \hline
+    A & 1.02 & 0.11 \\
+    B & 0.97 & 0.08 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\section{Results}
+
+Report what you found. Table~\ref{tab:results} lists the measurements and
+Eq.~(\ref{eq:mean}) defines the mean.
+
+\begin{credits}
+\subsubsection{\ackname} Thank the people and grants that made the work possible.
+\end{credits}
+
+\bibliographystyle{splncs04}
+\bibliography{references}
+
+\end{document}
